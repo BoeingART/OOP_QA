@@ -66,6 +66,7 @@ public:
 #### 9. Explain why we need namespace and try to describe some situations where namespaces are needed.
 
 - 名空间用于规定作用域，防止变量重名导致的错误。如全局变量的定义应被放入名空间中，防止污染作用域。
+- 大型文件通常由多个人开发，而在开发过程中可能出现不同人的变量命名相同的问题，因此需要使用namespace进行区分
 
 #### 10. Please enumerate all the ways of creating a namespace and referring to the names in the namespace using some examples.
 
@@ -134,7 +135,7 @@ public:
 
 ```cpp
 class C{ static int a; static int f(); };
-```  
+```
 
 They can be accessed either by `C::a` `C::f()` or by `c.a`, `c.f()` or by `c -> a`, `c -> f()`, given that `c` is (//or pointer to) an instance of type `C`.
 

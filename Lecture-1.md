@@ -131,7 +131,7 @@ Options starting with `-g`, `-f`, `-m`, `-O`, `-W`, or `--param` are automatical
   g++ -c lib2.cpp -o lib2.o
   ar -rv lib.a lib1.o lib2.o
   ranlib lib.a
-  ``` 
+  ```
 * To link the static library `lib.a`, run:
   ```bash
   g++ main.o lib.a –o main.exe
